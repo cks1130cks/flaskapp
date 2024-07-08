@@ -3,6 +3,7 @@
  }
  def testApp() {
  echo 'testing the applications...'
+ echo 'Replay'
  }
  def deployApp() {
  echo 'deploying the applicaiton...'
