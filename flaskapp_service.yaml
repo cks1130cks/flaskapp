@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: flaskservice
+  name: flaskapp-service
 spec:
-  containers:
-  - name: flaskapp
-    image: cks1130cks/flaskapp:latest
-    ports:
-    - containerPort: 5000
-  imagePullSecrets:
-  - name: scret
+  selector:
+    app: flaskapp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
