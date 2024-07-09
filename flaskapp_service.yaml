@@ -8,3 +8,5 @@ spec:
     image: cks1130cks/flaskapp:latest
     ports:
     - containerPort: 5000
+  imagePullSecrets:
+  - name: scret
