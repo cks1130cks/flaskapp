@@ -1,7 +1,7 @@
 apiVersion: v1
-kind: Pod
+kind: Service
 metadata:
-  name: flaskpod
+  name: flaskservice
 spec:
   containers:
   - name: flaskapp
