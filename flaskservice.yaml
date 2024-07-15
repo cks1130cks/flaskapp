@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: flaskapp-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: flaskapp
   ports:
